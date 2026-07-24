@@ -1,0 +1,155 @@
+:root {
+  --primary-gold: #FFA500;
+  --primary-gold-light: #FFB84D;
+  --primary-gold-bright: #FFD700;
+  --primary-gold-dark: #FF8C00;
+
+  --bg-dark: #0f0f0f;
+  --bg-darker: #0a0a0a;
+  --bg-card: rgba(25, 25, 25, 0.8);
+
+  --text-light: #fff;
+  --text-muted: #999;
+  --text-secondary: #ccc;
+
+  --border-gold: rgba(255, 165, 0, 0.2);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.7);
+
+  --sans: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Courier New', monospace;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color-scheme: dark;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--text-light);
+}
+
+/* Aislate styles to not affect external components */
+#root > * {
+  font-family: var(--sans);
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-gold);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-gold-light);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-gold-light);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  :root {
+    font-size: 14px;
+  }
+}

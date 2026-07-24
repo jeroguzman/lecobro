@@ -1,0 +1,141 @@
+.about-section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(15, 15, 15, 0.95) 100%);
+  backdrop-filter: blur(8px);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.12) 0%, rgba(255, 165, 0, 0.05) 30%, transparent 70%);
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.about-section::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.08) 0%, transparent 70%);
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.about-card {
+  background: linear-gradient(135deg, rgba(25, 25, 25, 0.85) 0%, rgba(35, 35, 35, 0.8) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 165, 0, 0.15);
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+
+.about-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #FFA500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1.2rem;
+  padding-left: 1.2rem;
+  border-left: 3px solid #FFA500;
+}
+
+.benefit-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  color: #FFA500;
+  margin-top: 2px;
+}
+
+.benefit-item h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.benefit-item p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-card {
+    padding: 2.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}

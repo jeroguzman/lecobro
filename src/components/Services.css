@@ -1,0 +1,118 @@
+.services-section {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(15, 15, 15, 0.95) 100%);
+  backdrop-filter: blur(8px);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.12) 0%, rgba(255, 165, 0, 0.05) 30%, transparent 70%);
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.services-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.service-card {
+  background: linear-gradient(135deg, rgba(25, 25, 25, 0.85) 0%, rgba(35, 35, 35, 0.8) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 165, 0, 0.15);
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 165, 0, 0.3);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFA500;
+  font-size: 2.2rem;
+  background: rgba(255, 165, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: rgba(255, 165, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-title {
+    font-size: 2.2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+  }
+}

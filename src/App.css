@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hero-section-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(15, 15, 15, 0.55) 0%, rgba(15, 15, 15, 0.2) 50%, rgba(15, 15, 15, 0.55) 100%);
+  z-index: 1;
+}
+
+.hero-section-wrapper > :not(nav) {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section-wrapper nav {
+  position: relative;
+  z-index: 101;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB84D;
+}

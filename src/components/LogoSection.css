@@ -1,0 +1,20 @@
+.logo-section {
+  position: relative;
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .logo-section {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo-section {
+    min-height: 500px;
+  }
+}

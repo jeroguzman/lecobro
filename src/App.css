@@ -10,8 +10,8 @@ html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f0f0f;
-  color: #fff;
+  background-color: #f8f9fa;
+  color: #1a1a1a;
   overflow-x: hidden;
 }
 
@@ -41,7 +41,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(15, 15, 15, 0.55) 0%, rgba(15, 15, 15, 0.2) 50%, rgba(15, 15, 15, 0.55) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.3) 100%);
   z-index: 1;
 }
 
@@ -61,14 +61,14 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f0f;
+  background: #f8f9fa;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFA500;
+  background: #F59E0B;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFB84D;
+  background: #FBBF24;
 }

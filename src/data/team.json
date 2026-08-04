@@ -1,0 +1,52 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Lic. Ana Karen Osuna Roman",
+      "role": "Abogada Asociada",
+      "image": "/src/assets/team/1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Lic. Panfilo López Pérez",
+      "role": "Socio Director/Mannaging Partner",
+      "image": "/src/assets/team/2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Lic. Jorshua Sergio J. Altamirano Osuna",
+      "role": "Abogado Asociado",
+      "image": "/src/assets/team/3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Lic. Iván Alejandro López Cubillas",
+      "role": "Abogado Asociado Senior",
+      "image": "/src/assets/team/4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Lic. Mauricio Jesús Torres German",
+      "role": "Abogado Asociado",
+      "image": "/src/assets/team/5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Lic. Nicole Fernanda Valencia Valenzuela",
+      "role": "Abogada Asociada",
+      "image": "/src/assets/team/6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Lic. Nahomi Carolina Lomeli Amparo",
+      "role": "Abogada Asociada",
+      "image": "/src/assets/team/7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "C. Kevin Andres Zavala Valadez",
+      "role": "Asistente Administrativo",
+      "image": "/src/assets/team/8.jpeg"
+    }
+  ]
+}

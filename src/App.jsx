@@ -6,8 +6,8 @@ import About from './components/About'
 import Services from './components/Services'
 import LogoSection from './components/LogoSection'
 import Stats from './components/Stats'
+import Team from './components/Team'
 import Testimonials from './components/Testimonials'
-import AppLogin from './components/AppLogin'
 import RecoveryForm from './components/RecoveryForm'
 import Footer from './components/Footer'
 import PrivacyPolicy from './components/PrivacyPolicy'
@@ -19,9 +19,9 @@ function Home() {
   const aboutRef = useRef(null)
   const servicesRef = useRef(null)
   const statsRef = useRef(null)
+  const teamRef = useRef(null)
   const testimonialsRef = useRef(null)
   const recoveryFormRef = useRef(null)
-  const appLoginRef = useRef(null)
 
   const scrollToSection = (ref) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
@@ -36,9 +36,9 @@ function Home() {
           about: aboutRef,
           services: servicesRef,
           stats: statsRef,
+          team: teamRef,
           testimonials: testimonialsRef,
-          recoveryForm: recoveryFormRef,
-          appLogin: appLoginRef
+          recoveryForm: recoveryFormRef
         }}
       />
       <div className="hero-section-wrapper" style={{ backgroundImage: `url(${heroImage})` }}>
@@ -48,9 +48,9 @@ function Home() {
       <Services ref={servicesRef} />
       <LogoSection />
       <Stats ref={statsRef} />
+      <Team ref={teamRef} />
       <Testimonials ref={testimonialsRef} />
       <RecoveryForm ref={recoveryFormRef} />
-      <AppLogin ref={appLoginRef} />
       <Footer />
     </>
   )

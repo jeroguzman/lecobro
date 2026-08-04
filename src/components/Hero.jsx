@@ -24,7 +24,6 @@ const Hero = forwardRef(function Hero({ scrollToSection, refs }, ref) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="hero-subtitle">DESPACHO JURIDICO</div>
           <h1 className="hero-title">
             RECUPERAMOS TU<br />
             <span className="highlight">CARTERA 100% LEGAL</span>

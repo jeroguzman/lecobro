@@ -2,7 +2,7 @@
   position: relative;
   background: linear-gradient(180deg, rgba(15, 15, 15, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
   backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255, 165, 0, 0.12);
+  border-top: 1px solid rgba(245, 158, 11, 0.12);
   padding: 3.5rem 2rem 2.5rem;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 165, 0, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.2), transparent);
   z-index: 1;
 }
 
@@ -31,7 +31,7 @@
 
 .footer-section h3 {
   font-size: 1.4rem;
-  background: linear-gradient(135deg, #FFB84D, #FFA500);
+  background: linear-gradient(135deg, #F59E0B, #FBBF24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -70,7 +70,7 @@
 }
 
 .footer-section a:hover {
-  color: #FFA500;
+  color: #F59E0B;
   padding-left: 4px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .footer-bottom a:hover {
-  color: #FFA500;
+  color: #F59E0B;
 }
 
 .whatsapp-button {

@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <>
       <FloatingWhatsApp
-        phoneNumber="526621902506"
-        accountName="LECOBRO.mx"
+        phoneNumber="526623546361"
+        accountName="lecobro.mx"
         statusMessage="Responderemos en breve"
         chatMessage="¡Hola! ¿Cómo podemos ayudarte?"
         avatar="/src/assets/lecobro-logo-3d.png"
@@ -15,7 +15,7 @@ export default function Footer() {
       />
       <footer className="footer">
         <div className="footer-bottom">
-          <p>&copy; 2026 LECOBRO. Todos los derechos reservados.</p>
+          <p>&copy; 2026 lecobro.mx. Todos los derechos reservados.</p>
           <Link to="/privacy">Aviso de Privacidad</Link>
         </div>
       </footer>

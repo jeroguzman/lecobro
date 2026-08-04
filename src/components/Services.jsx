@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { FaPhone, FaGavel, FaEye } from 'react-icons/fa'
+import { FaPhone, FaGavel, FaSearch, FaVolumeUp, FaBalanceScale, FaBriefcase, FaMoneyBillWave } from 'react-icons/fa'
 import './Services.css'
 
 const Services = forwardRef(function Services(props, ref) {
@@ -10,14 +10,34 @@ const Services = forwardRef(function Services(props, ref) {
       description: 'Estrategias de mediación rápida, reestructuras contractuales y convenios oportunos antes de instancias judiciales.'
     },
     {
-      icon: FaGavel,
+      icon: FaMoneyBillWave,
       title: 'Cobranza Judicial',
       description: 'Litigio especializado en materia mercantil, demandas ejecutivas, dictaminación y ejecución percial de garantías.'
     },
     {
-      icon: FaEye,
+      icon: FaSearch,
       title: 'Auditoría de Portafolio',
       description: 'Análisis minucioso del nivel de riesgo, viabilidad jurídica y depuración profunda de carteras vendidas.'
+    },
+    {
+      icon: FaBriefcase,
+      title: 'Juicio Ejecutivo Mercantil',
+      description: 'Procedimientos ejecutivos mercantiles ágiles y efectivos para recuperar tu capital.'
+    },
+    {
+      icon: FaGavel,
+      title: 'Juicio Ordinario Mercantil',
+      description: 'Litigio ordinario mercantil con procedimientos estratégicos y respaldados legalmente.'
+    },
+    {
+      icon: FaVolumeUp,
+      title: 'Juicio Ejecutivo Oral',
+      description: 'Litigio oral especializado en procedimientos ejecutivos con máxima efectividad.'
+    },
+    {
+      icon: FaBalanceScale,
+      title: 'Juicio Oral Mercantil',
+      description: 'Procedimientos orales mercantiles con estrategia integral para garantizar resultados.'
     }
   ]
 

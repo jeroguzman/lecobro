@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FaPhone, FaEnvelope } from 'react-icons/fa'
 import './Footer.css'
 
 export default function Footer({ scrollToSection, refs = {} }) {
@@ -17,11 +18,12 @@ export default function Footer({ scrollToSection, refs = {} }) {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Ubicación</h3>
-            <p>Blvd. Luis Donaldo Colosio Murrieta 450, Piso 6, Oficina 6<br/>Edificio Metrocentro, Colonia Villa Satélite<br/>CP. 83200, Hermosillo, Sonora, México</p>
+            <p>Blvd. Luis Donaldo Colosio Murrieta 450 <br /> Piso 6, Oficina 6 Edificio Metrocentro <br /> Colonia Villa Satélite CP. 83200 <br /> Hermosillo, Sonora, México</p>
           </div>
           <div className="footer-section">
             <h3>Contacto</h3>
-            <p><a href="tel:6626809802">662-680-9802</a></p>
+            <p><FaPhone className="footer-icon" /> <a href="tel:6626809802">662-680-9802</a></p><br />
+            <p><FaEnvelope className="footer-icon" /> <a href="mailto:consultoría-juridica@hotmail.es">consultoría-juridica@hotmail.es</a></p>
           </div>
           <div className="footer-section">
             <h3>Servicios</h3>

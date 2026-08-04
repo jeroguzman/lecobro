@@ -1,9 +1,11 @@
 import { useState, useEffect, forwardRef } from 'react'
 import { motion } from 'framer-motion'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Testimonials.css'
 
 const Testimonials = forwardRef(function Testimonials(props, ref) {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
+  const containerRef = useScrollAnimation()
 
   const testimonials = [
     {
@@ -25,16 +27,16 @@ const Testimonials = forwardRef(function Testimonials(props, ref) {
 
   return (
     <section className="testimonials-section" ref={ref}>
-      <div className="testimonials-container">
+      <div className="testimonials-container" ref={containerRef}>
         <h2 className="testimonials-title">Beneficios Respaldados por Clientes</h2>
         <p className="testimonials-subtitle">Lo que las grandes corporaciones y financieras opinan de nuestra gestión.</p>
 
         <motion.div
           key={activeTestimonial}
-          className="testimonial-card"
+          className="testimonial-card card-animated"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className="testimonial-text">"{testimonials[activeTestimonial].text}"</p>
           <p className="testimonial-author">— {testimonials[activeTestimonial].author}</p>

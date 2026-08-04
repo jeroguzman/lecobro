@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import { useScrollReveal } from '../hooks/useScrollAnimation'
 import './Team.css'
 import teamData from '../data/team.json'
 import teamImage1 from '../assets/team/1.jpeg'
@@ -23,6 +24,7 @@ const teamImages = {
 
 const Team = forwardRef(function Team(props, ref) {
   const teamMembers = teamData.team
+  const gridRef = useScrollReveal()
 
   return (
     <section className="team" ref={ref}>
@@ -30,9 +32,10 @@ const Team = forwardRef(function Team(props, ref) {
         <h2 className="team-title">Nuestro Equipo</h2>
         <p className="team-subtitle">Conoce a los expertos detrás de lecobro.mx</p>
 
-        <div className="team-grid">
-          {teamMembers.map((member) => (
-            <div key={member.id} className={`team-card team-card-${member.id}`}>
+        <div className="team-grid" ref={gridRef}>
+          {teamMembers.map((member, index) => {
+            return (
+            <div key={member.id} data-reveal className={`team-card team-card-${member.id} card-animated scale`}>
               <div className="team-image">
                 <img src={teamImages[member.id]} alt={member.name} className="team-photo" />
               </div>
@@ -41,7 +44,9 @@ const Team = forwardRef(function Team(props, ref) {
                 <p className="team-role">{member.role}</p>
               </div>
             </div>
-          ))}
+            )
+          })}
+
         </div>
       </div>
     </section>

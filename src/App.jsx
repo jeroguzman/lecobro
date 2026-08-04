@@ -51,7 +51,7 @@ function Home() {
       <Team ref={teamRef} />
       <Testimonials ref={testimonialsRef} />
       <RecoveryForm ref={recoveryFormRef} />
-      <Footer />
+      <Footer scrollToSection={scrollToSection} refs={{ services: servicesRef, about: aboutRef, stats: statsRef, team: teamRef, testimonials: testimonialsRef, recoveryForm: recoveryFormRef }} />
     </>
   )
 }

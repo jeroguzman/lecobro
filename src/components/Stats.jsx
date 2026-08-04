@@ -1,8 +1,11 @@
 import { forwardRef } from 'react'
 import { FaLock, FaStar, FaBalanceScale } from 'react-icons/fa'
+import { useScrollReveal } from '../hooks/useScrollAnimation'
 import './Stats.css'
 
 const Stats = forwardRef(function Stats(props, ref) {
+  const gridRef = useScrollReveal()
+  const valuesRef = useScrollReveal()
   const stats = [
     { number: '+25000', label: 'CASOS ATENDIDOS' },
     { number: '94%', label: 'ÉXITO EN MEDIACIÓN' },
@@ -19,22 +22,24 @@ const Stats = forwardRef(function Stats(props, ref) {
   return (
     <section className="stats-section" ref={ref}>
       <div className="stats-container">
-        <div className="stats-grid">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-item">
+        <div className="stats-grid" ref={gridRef}>
+          {stats.map((stat, index) => {
+            return (
+            <div key={index} data-reveal className={`stat-item slide-up`}>
               <div className="stat-number">{stat.number}</div>
               <div className="stat-label">{stat.label}</div>
             </div>
-          ))}
+            )
+          })}
         </div>
 
         <div className="stats-divider"></div>
 
-        <div className="stats-values">
+        <div className="stats-values" ref={valuesRef}>
           {values.map((value, index) => {
             const Icon = value.icon
             return (
-              <div key={index} className="value-item">
+              <div key={index} data-reveal className={`value-item`}>
                 <Icon className="value-icon" />
                 <span className="value-text">{value.text}</span>
               </div>

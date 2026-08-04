@@ -74,12 +74,29 @@
   padding-left: 4px;
 }
 
+.footer-link {
+  background: none;
+  border: none;
+  color: rgba(153, 153, 153, 0.85);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.footer-link:hover {
+  color: #F59E0B;
+  padding-left: 4px;
+}
+
 .footer-bottom {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: rgba(102, 102, 102, 0.8);
   font-size: 0.85rem;

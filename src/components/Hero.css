@@ -60,11 +60,9 @@
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 6rem 3rem;
+  padding: 15rem 3rem 6rem 3rem;
   width: 100%;
 }
-
-
 
 .hero-subtitle {
   font-size: 0.95rem;
@@ -154,6 +152,20 @@
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
 }
 
+.btn-whatsapp {
+  background: #fff;
+  color: #1a1a1a;
+  border-color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #f0f0f0;
+  color: #1a1a1a;
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
 .hero-icon-container {
   display: flex;
   justify-content: center;
@@ -221,7 +233,7 @@
   }
 
   .hero-content {
-    padding: 3rem 1.5rem 1rem;
+    padding: 24rem 1.5rem 1rem;
   }
 
   .hero-title {

@@ -1,8 +1,10 @@
 import { useState, forwardRef } from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './RecoveryForm.css'
 
 const RecoveryForm = forwardRef(function RecoveryForm(props, ref) {
+  const formRef = useScrollAnimation({ delay: 200 })
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -31,7 +33,7 @@ const RecoveryForm = forwardRef(function RecoveryForm(props, ref) {
         <h2 className="form-title">Inicia tu Trámite de Recuperación</h2>
         <p className="form-subtitle">Llena el formulario formal y un experto se comunicará contigo vía WhatsApp de inmediato.</p>
 
-        <form className="recovery-form" onSubmit={handleSubmit}>
+        <form className="recovery-form card-animated animate-in slide-up" ref={formRef} onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nombre Completo / Representante Legal</label>
             <input

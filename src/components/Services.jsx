@@ -1,8 +1,10 @@
 import { forwardRef } from 'react'
 import { FaPhone, FaGavel, FaSearch, FaVolumeUp, FaBalanceScale, FaBriefcase, FaMoneyBillWave } from 'react-icons/fa'
+import { useScrollReveal } from '../hooks/useScrollAnimation'
 import './Services.css'
 
 const Services = forwardRef(function Services(props, ref) {
+  const gridRef = useScrollReveal()
   const services = [
     {
       icon: FaPhone,
@@ -17,7 +19,7 @@ const Services = forwardRef(function Services(props, ref) {
     {
       icon: FaSearch,
       title: 'Auditoría de Portafolio',
-      description: 'Análisis minucioso del nivel de riesgo, viabilidad jurídica y depuración profunda de carteras vendidas.'
+      description: 'Análisis minucioso del nivel de riesgo, viabilidad jurídica y depuración profunda de carteras vencidas.'
     },
     {
       icon: FaBriefcase,
@@ -47,11 +49,11 @@ const Services = forwardRef(function Services(props, ref) {
         <h2 className="services-title">Servicios Legales Integrales</h2>
         <p className="services-subtitle">Estrategias estructuradas para el retorno inmediato de tu capital.</p>
 
-        <div className="services-grid">
+        <div className="services-grid" ref={gridRef}>
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div key={index} className="service-card">
+              <div key={index} data-reveal className={`service-card card-animated slide-up`}>
                 <div className="service-icon">
                   <Icon />
                 </div>

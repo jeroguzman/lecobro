@@ -36,8 +36,15 @@ const Hero = forwardRef(function Hero({ scrollToSection, refs }, ref) {
             <button onClick={() => scrollToSection(refs.recoveryForm)} className="btn btn-primary">
               EVALUAR CARTERA GRATIS
             </button>
-            <button onClick={() => scrollToSection(refs.services)} className="btn btn-secondary">
-              VER SOLUCIONES
+            <button
+              onClick={() => {
+                const whatsappNumber = '526623546361'
+                const message = '¡Hola LECOBRO! Me gustaría agendar una cita para consultar sobre nuestros servicios de cobranza.'
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank')
+              }}
+              className="btn btn-whatsapp"
+            >
+              AGENDAR CITA
             </button>
           </div>
         </motion.div>

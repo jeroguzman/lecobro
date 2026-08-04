@@ -1,15 +1,18 @@
 import { forwardRef } from 'react'
 import { FaShieldAlt, FaUsers, FaBolt } from 'react-icons/fa'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './About.css'
 
 const About = forwardRef(function About(props, ref) {
+  const cardRef = useScrollAnimation()
+
   return (
     <section className="about-section" ref={ref}>
       <div className="about-container">
         <h2 className="about-title">Conoce a lecobro.mx</h2>
         <p className="about-subtitle">Tu aliado e intermediario institucional de confianza, comprometido con la ética y la efectividad jurídica.</p>
 
-        <div className="about-card">
+        <div className="about-card card-animated" ref={cardRef}>
           <div className="about-icon">
             <FaShieldAlt />
           </div>

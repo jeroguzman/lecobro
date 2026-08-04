@@ -2,24 +2,25 @@
   "team": [
     {
       "id": 1,
-      "name": "Lic. Ana Karen Osuna Roman",
-      "role": "Abogada Asociada"
-    },
-    {
-      "id": 2,
       "name": "Lic. Panfilo López Pérez",
       "role": "Socio Director/Mannaging Partner"
     },
     {
-      "id": 3,
-      "name": "Lic. Jorshua Sergio J. Altamirano Osuna",
-      "role": "Abogado Asociado"
-    },
-    {
-      "id": 4,
+      "id": 2,
       "name": "Lic. Iván Alejandro López Cubillas",
       "role": "Abogado Asociado Senior"
     },
+    {
+      "id": 3,
+      "name": "Lic. Ana Karen Osuna Roman",
+      "role": "Abogada Asociada"
+    },
+    {
+      "id": 4,
+      "name": "Lic. Jorshua Sergio J. Altamirano Osuna",
+      "role": "Abogado Asociado"
+    },
+
     {
       "id": 5,
       "name": "Lic. Mauricio Jesús Torres German",

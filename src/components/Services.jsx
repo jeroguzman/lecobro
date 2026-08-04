@@ -40,6 +40,11 @@ const Services = forwardRef(function Services(props, ref) {
       icon: FaBalanceScale,
       title: 'Juicio Oral Mercantil',
       description: 'Procedimientos orales mercantiles con estrategia integral para garantizar resultados.'
+    },
+    {
+      icon: FaGavel,
+      title: 'Litigio en Temas Civiles, Familiares, Laborales, Penales y Amparo',
+      description: 'Representación legal especializada en diversos campos del derecho para proteger tus derechos e intereses.'
     }
   ]
 

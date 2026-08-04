@@ -39,7 +39,7 @@ const Hero = forwardRef(function Hero({ scrollToSection, refs }, ref) {
             <button
               onClick={() => {
                 const whatsappNumber = '526623546361'
-                const message = '¡Hola LECOBRO! Me gustaría agendar una cita para consultar sobre nuestros servicios de cobranza.'
+                const message = '¡Hola lecobro.mx! Me gustaría agendar una cita para consultar sobre sus servicios.'
                 window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank')
               }}
               className="btn btn-whatsapp"

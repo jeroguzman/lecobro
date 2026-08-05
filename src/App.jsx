@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials'
 import RecoveryForm from './components/RecoveryForm'
 import Footer from './components/Footer'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import TermsAndConditions from './components/TermsAndConditions'
 import heroImage from './assets/hero-bg.jpg'
 import './App.css'
 
@@ -62,6 +63,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
       </Routes>
     </BrowserRouter>
   )

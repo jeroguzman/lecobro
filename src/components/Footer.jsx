@@ -37,7 +37,7 @@ export default function Footer({ scrollToSection, refs = {} }) {
             <h3>Legal</h3>
             <ul>
               <li><Link to="/privacy">Aviso de Privacidad</Link></li>
-              <li><a href="#terminos">Términos y Condiciones</a></li>
+              <li><Link to="/terms">Términos y Condiciones</Link></li>
             </ul>
           </div>
         </div>

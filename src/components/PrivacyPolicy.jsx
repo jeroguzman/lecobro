@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
         <h2>Contacto</h2>
         <p>
           Para cualquier duda o consulta sobre este Aviso de Privacidad, puede contactarnos en:<br/>
-          <strong>Teléfono:</strong> 662-680-9802<br/>
+          <strong>Teléfono:</strong> 662-190-2506<br/>
           <strong>Correo:</strong> consultoría-juridica@hotmail.es<br/>
           <strong>Sitio Web:</strong> lecobro.mx
         </p>

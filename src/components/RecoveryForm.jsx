@@ -22,7 +22,7 @@ const RecoveryForm = forwardRef(function RecoveryForm(props, ref) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const whatsappNumber = '526623546361'
+    const whatsappNumber = '526621902506'
     const message = `¡Hola lecobro.mx! Solicitud de Asesoría Premium: • *Nombre:* ${formData.name} • *Financiera:* ${formData.company} • *Monto de Cartera:* ${formData.amount} • *Detalles:* ${formData.details}`
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank')
   }

@@ -7,7 +7,7 @@ export default function Footer({ scrollToSection, refs = {} }) {
   return (
     <>
       <FloatingWhatsApp
-        phoneNumber="526623546361"
+        phoneNumber="526621902506"
         accountName="lecobro.mx"
         statusMessage="Responderemos en breve"
         chatMessage="¡Hola! ¿Cómo podemos ayudarte?"
@@ -22,7 +22,7 @@ export default function Footer({ scrollToSection, refs = {} }) {
           </div>
           <div className="footer-section">
             <h3>Contacto</h3>
-            <p><FaPhone className="footer-icon" /> <a href="tel:6626809802">662-680-9802</a></p><br />
+            <p><FaPhone className="footer-icon" /> <a href="tel:6621902506">662-190-2506</a></p><br />
             <p><FaEnvelope className="footer-icon" /> <a href="mailto:consultoría-juridica@hotmail.es">consultoría-juridica@hotmail.es</a></p>
           </div>
           <div className="footer-section">
